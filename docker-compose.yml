@@ -1,0 +1,13 @@
+version: '2'
+services:
+    app:
+        build: .         
+        ports:
+            - "8888:8888"
+        volumes:
+            - .:/datgatto:Z
+        networks:
+            - net1            
+networks:
+    net1:
+        driver: bridge          

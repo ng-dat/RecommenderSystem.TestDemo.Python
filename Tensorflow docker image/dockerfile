@@ -1,0 +1,4 @@
+FROM jupyter/scipy-notebook
+ADD . /datgatto
+WORKDIR /datgatto
+RUN pip install -r requirement.txt
